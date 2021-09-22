@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 const api = {
-  key: "766f408f7c3286532df34974f2d21d36",
+  key: process.env.REACT_APP_APIKEY,
   base: "https://api.openweathermap.org/data/2.5/"
 }
-
+console.log (process.env.REACT_APP_APIKEY)
 function App() {
   const [query, setQuery] = useState('');
   const[weather, setWeather] = useState({});
